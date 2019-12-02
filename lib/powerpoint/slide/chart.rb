@@ -32,6 +32,10 @@ module Powerpoint
       def save_chart_xml(extract_path, index)
         render_view('chart_chart.xml.erb', "#{extract_path}/ppt/charts/chart#{index}.xml")
       end
+
+      def save_chart_rel_xml(extract_path, index)
+        render_view('chart_chart_rel.xml.erb', "#{extract_path}/ppt/charts/_rel/chart#{index}.xml.rels")
+      end
       private :save_slide_xml
     end
   end
