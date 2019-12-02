@@ -6,10 +6,10 @@ module Powerpoint
     class Chart
       include Powerpoint::Util
 
-      attr_reader :title, :content
+      attr_reader :title
 
       def initialize(options={})
-        require_arguments [:title, :content], options
+        require_arguments [:title], options
         options.each {|k, v| instance_variable_set("@#{k}", v)}
       end
 
