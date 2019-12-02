@@ -2,6 +2,15 @@
 <Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types">
   <Default ContentType="application/xml" Extension="xml"/>
   <Default ContentType="application/vnd.openxmlformats-package.relationships+xml" Extension="rels"/>
+  <Default Extension="jpeg" ContentType="image/jpg"/>
+  <Default Extension="png" ContentType="image/png"/>
+  <Default Extension="bmp" ContentType="image/bmp"/>
+  <Default Extension="gif" ContentType="image/gif"/>
+  <Default Extension="tif" ContentType="image/tif"/>
+  <Default Extension="pdf" ContentType="application/pdf"/>
+  <Default Extension="mov" ContentType="application/movie"/>
+  <Default Extension="vml" ContentType="application/vnd.openxmlformats-officedocument.vmlDrawing"/>
+  <Default Extension="xlsx" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
   <% file_types.each do |type| %>
   <Default ContentType="image/<%= type %>" Extension="<%= type %>"/>
   <% end %>
